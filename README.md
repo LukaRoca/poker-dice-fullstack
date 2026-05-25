@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Poker Dice Full-Stack Platform 🎲
 
 A robust, real-time Full-Stack web application for the classic Poker Dice game. This platform features a scalable Spring Boot backend, a responsive React frontend, and real-time event communication via Server-Sent Events (SSE).
@@ -12,18 +11,18 @@ A robust, real-time Full-Stack web application for the classic Poker Dice game. 
 
 ---
 
-## 🚀 Overview
+## Overview
 
 This platform allows users to create and join lobbies, play match rounds, and experience real-time updates through asynchronous communication. Built as a comprehensive full-stack solution, it focuses on clean architecture, secure authentication, and seamless user experience.
 
-## 🏗 Architecture
+## Architecture
 
 * **Backend:** Kotlin + Spring Boot API, PostgreSQL for persistence, and JWT-based authentication.
 * **Frontend:** React + TypeScript (SPA), leveraging Context API and Hooks for state management.
 * **Real-time Communication:** Server-Sent Events (SSE) for instant match updates and lobby notifications.
 * **Deployment:** Containerized via Docker & Docker Compose, running on AWS (EC2).
 
-## ✨ Key Features
+## Key Features
 
 * **Lobby Management:** Real-time lobby creation, player joining/leaving, and matchmaking.
 * **Game Engine:** State machine handling dice rolls, re-rolls, and round scoring logic.
@@ -31,7 +30,7 @@ This platform allows users to create and join lobbies, play match rounds, and ex
 * **Responsive UI:** Modern interface optimized for lobby management and match gameplay.
 * **Cloud Optimized:** Fully automated deployment flow.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Backend
 * **Language:** Kotlin
@@ -45,7 +44,7 @@ This platform allows users to create and join lobbies, play match rounds, and ex
 * **State Management:** React Context API
 * **Communication:** Fetch API & Server-Sent Events (SSE)
 
-## ⚡ Quick Start
+## Quick Start
 
 ### Prerequisites
 * [Docker](https://www.docker.com/) & [Docker Compose](https://docs.docker.com/compose/)
