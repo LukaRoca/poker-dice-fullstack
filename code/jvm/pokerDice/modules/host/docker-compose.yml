@@ -1,0 +1,40 @@
+services:
+
+  ubuntu:
+    container_name: ubuntu
+    image: ubuntu
+    tty: true
+
+  db-tests:
+    container_name: db-tests
+    build:
+      context: ../repositoryJdbi
+      dockerfile: tests/Dockerfile-db-test
+    image: poker-db-tests
+    environment:
+      - POSTGRES_USER=poker_user
+      - POSTGRES_PASSWORD=poker_pass
+      - POSTGRES_DB=poker_db
+    ports:
+      - 5432:5432
+
+  poker-jvm-1:
+    container_name: poker-jvm-1
+    hostname: poker-jvm-1
+    image: poker-dice-jvm
+    environment:
+      SERVER_PORT: 8080
+      DB_URL: "jdbc:postgresql://db-tests:5432/poker_db?user=poker_user&password=poker_pass"
+    ports:
+      - 8080:8080
+
+
+  nginx:
+    container_name: poker-nginx
+    build:
+      context: ../../../../..
+      dockerfile: code/jvm/pokerDice/modules/host/tests/Dockerfile-nginx
+    ports:
+      - "3000:80"
+    depends_on:
+      - poker-jvm-1

@@ -1,0 +1,95 @@
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-header {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #555;
+}
+
+.form-input {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-button {
+    padding: 10px;
+    background: #007bff; /* Azul primário */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.login-button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.login-button:disabled {
+    background-color: #ffffff;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #d9534f;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-footer {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.invite-result-box {
+    background-color: #f0fdf4; /* Um verde claro */
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.invite-result-box p {
+    margin: 0;
+    color: #166534; /* Um verde escuro */
+}
+
+.invite-code {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #15803d;
+    margin: 10px 0;
+    display: block; /* Para ficar em linha própria */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.invite-result-box span {
+    font-size: 0.9rem;
+    color: #16a34a;
+}

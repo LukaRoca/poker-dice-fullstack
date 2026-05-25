@@ -1,0 +1,8 @@
+FROM eclipse-temurin:21-jre-alpine
+ARG DEPENDENCY=build/dependency
+
+COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
+COPY ${DEPENDENCY}/META-INF /app/META-INF
+COPY ${DEPENDENCY}/BOOT-INF/classes /app/classes
+
+ENTRYPOINT ["java","-cp","app/classes:app/lib/*","poker.PokerDiceApplicationKt"]

@@ -1,0 +1,54 @@
+.lobbies-page-container {
+    width: 100%;
+    padding: 2rem;
+    max-width: 1280px; /* Layout largo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lobbies-header {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827; /* (cor de texto claro/escuro) */
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lobby-list {
+    display: grid;
+    /* Cria colunas automáticas para os cartões de lobby */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.lobby-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s;
+}
+
+.lobby-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.lobby-card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+.lobby-card p {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.lobby-card .join-button {
+    width: 100%;
+    margin-top: 1rem;
+    /* (Podes reutilizar .login-button se quiseres) */
+}

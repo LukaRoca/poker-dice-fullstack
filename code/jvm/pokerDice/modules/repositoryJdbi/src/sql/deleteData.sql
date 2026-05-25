@@ -1,0 +1,5 @@
+TRUNCATE TABLE dbo.app_invite;
+TRUNCATE TABLE dbo.tokens;
+TRUNCATE TABLE dbo.lobby_player;
+TRUNCATE TABLE dbo.Lobby CASCADE;
+TRUNCATE TABLE dbo.User CASCADE;

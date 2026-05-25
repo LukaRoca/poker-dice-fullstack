@@ -1,0 +1,43 @@
+.lobby-detail-container {
+    width: 100%;
+    padding: 2rem;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lobby-detail-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.lobby-detail-status {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.lobby-players-list {
+    margin-top: 2rem;
+}
+
+.lobby-players-list h3 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.player-item {
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.player-item.is-host {
+    background-color: #fffbeb; /* Amarelo claro para o host */
+    border: 1px solid #fde68a;
+}

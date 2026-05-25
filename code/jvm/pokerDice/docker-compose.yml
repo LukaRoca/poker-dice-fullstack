@@ -1,0 +1,12 @@
+services:
+  db-tests:
+    container_name: db-tests
+    build:
+      context: ./modules/repositoryJdbi
+      dockerfile: ./tests/Dockerfile-db-test
+    environment:
+      - POSTGRES_USER=poker_user
+      - POSTGRES_PASSWORD=poker_pass
+      - POSTGRES_DB=poker_db
+    ports:
+      - 5432:5432
