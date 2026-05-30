@@ -55,29 +55,17 @@ This platform allows users to create and join lobbies, play match rounds, and ex
 * [Node.js](https://nodejs.org/) & [npm](https://www.npmjs.com/)
 
 ### 1. Backend
-Navigate to the backend directory and start the services:
+Navigate to the backend directory and start the services (Make sure you have Docker opened):
 ```bash
-cd jvm
+cd .\backEnd\pokerDice\
 docker-compose up -d
 ```
 
 ### 2. Frontend
 Navigate to the frontend directory, install dependencies, and start the app:
 ```bash
-cd js
+cd .\frontEnd
 npm install
 npm run dev
 ```
 The application will be running at http://localhost:5173
-=======
-# DAW project
-
-Please edit this document with an introduction to your project, including links to all the existing documentation.
-
-In addition, please add a [`.mailmap`](https://git-scm.com/docs/gitmailmap) file, mapping the emails used in the commits to your ISEL email and student number
-Example:
-
-```
-12345 <a12345@alunos.isel.pt> <mygithubuser@whatever.com>
-```
-
