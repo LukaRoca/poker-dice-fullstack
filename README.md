@@ -76,5 +76,4 @@ Example:
 ```
 12345 <a12345@alunos.isel.pt> <mygithubuser@whatever.com>
 ```
->>>>>>> 4d5d329 (Initial full-stack project commit)
 
