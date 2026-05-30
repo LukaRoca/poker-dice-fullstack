@@ -2,6 +2,10 @@
 
 A robust, real-time Full-Stack web application for the classic Poker Dice game. This platform features a scalable Spring Boot backend, a responsive React frontend, and real-time event communication via Server-Sent Events (SSE).
 
+## Live Demo
+The application is currently deployed and running on AWS (EC2). You can test it live here:
+**[Play Poker Dice Now](http://51.21.196.156)**
+
 ![Java](https://img.shields.io/badge/Java-21-orange.svg)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.0-blue.svg)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-brightgreen.svg)
