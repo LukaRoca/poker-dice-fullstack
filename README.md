@@ -1,4 +1,4 @@
-# Poker Dice Full-Stack Platform 🎲
+# Poker Dice Full-Stack Platform
 
 A robust, real-time Full-Stack web application for the classic Poker Dice game. This platform features a scalable Spring Boot backend, a responsive React frontend, and real-time event communication via Server-Sent Events (SSE).
 
