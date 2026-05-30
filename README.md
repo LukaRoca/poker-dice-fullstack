@@ -4,7 +4,7 @@ A robust, real-time Full-Stack web application for the classic Poker Dice game. 
 
 ## Live Demo
 The application is currently deployed and running on AWS (EC2). You can test it live here:
-**[Play Poker Dice Now](http://51.21.196.156)**
+**[Play Poker Dice Now](http://51.21.196.156:3000/)**
 
 ![Java](https://img.shields.io/badge/Java-21-orange.svg)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.0-blue.svg)
@@ -48,7 +48,7 @@ This platform allows users to create and join lobbies, play match rounds, and ex
 * **State Management:** React Context API
 * **Communication:** Fetch API & Server-Sent Events (SSE)
 
-## Quick Start
+## Quick Start if you want to test it in your local machine:
 
 ### Prerequisites
 * [Docker](https://www.docker.com/) & [Docker Compose](https://docs.docker.com/compose/)
@@ -57,14 +57,14 @@ This platform allows users to create and join lobbies, play match rounds, and ex
 ### 1. Backend
 Navigate to the backend directory and start the services (Make sure you have Docker opened):
 ```bash
-cd .\backEnd\pokerDice\
+cd backEnd/pokerDice/modules/host
 docker-compose up -d
 ```
 
 ### 2. Frontend
 Navigate to the frontend directory, install dependencies, and start the app:
 ```bash
-cd .\frontEnd
+cd frontEnd/
 npm install
 npm run dev
 ```
